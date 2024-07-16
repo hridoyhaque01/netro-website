@@ -33,7 +33,7 @@ function ContactOne({ className }) {
                     customer support manager.
                 </motion.p>
 
-                <div className="flex items-center justify-center gap-[3.75rem] w-full max-w-[996px] mx-auto mt-[60px]">
+                <div className="flex items-center justify-center gap-[3.75rem] w-full max-w-[996px] mx-auto mt-[60px] relative z-50">
                     <motion.form
                         variants={animatedItem({
                             blur: 5,
