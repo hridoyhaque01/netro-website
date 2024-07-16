@@ -1,0 +1,14 @@
+#modal-toggle:checked ~ .modal {
+  pointer-events: auto;
+  opacity: 1;
+  cursor: default;
+  visibility: visible;
+}
+
+#modal-toggle:checked ~ .modal .modal-wrapper {
+  transform: scale(1);
+}
+
+.modal-wrapper {
+  transform: scale(0.9);
+}

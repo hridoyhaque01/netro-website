@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .containerX {
+        @apply w-full max-w-[1176px] mx-auto;
+    }
+    .container2X {
+        @apply w-full max-w-[1280px] mx-auto;
+    }
+    .tag {
+        @apply px-6 py-2 rounded-full text-xl text-black-700 bg-main-300 uppercase;
+    }
+    .title {
+        @apply text-6xl font-bold leading-[120%] !important;
+    }
+
+    .subtitle {
+        @apply text-xl text-neutral-200;
+    }
+    .arrowBtn {
+        @apply flex items-center justify-center w-[60px] aspect-square rounded-full border border-neutral-300 hover:border-black-900 hover:bg-black-800  disabled:hover:bg-transparent disabled:hover:border-neutral-300 duration-300 !important;
+    }
+
+    .btn_primary {
+        @apply flex items-center py-5 px-8 gap-2 bg-blue-500 font-bold text-xl rounded-full;
+    }
+
+    .arrowSvg {
+        @apply fill-black-800 group-disabled:fill-black-800 group-hover:fill-white duration-300;
+    }
+    .modal {
+        @apply fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 pointer-events-none opacity-0 invisible cursor-none transition-all ease-in-out;
+    }
+    .modal-wrpper {
+        @apply shadow-lg relative scale-100 transition-transform ease-in-out z-50;
+    }
+
+    .modal-backdrop {
+        @apply fixed top-0 left-0 w-full h-full;
+    }
+}
